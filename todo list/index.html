@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/244bcbfcc1.js" crossorigin="anonymous"></script>
+  <title>Simple List</title>
+</head>
+
+<!--External Js-->
+<script defer src = "script.js"></script>
+
+<!--Inline Css-->
+<style>
+    #heading{
+        text-align: center;
+        color: white;
+    }
+    .list-item {  /*Operation on all list items*/
+    cursor: cell; /*this is what cursor looks like upon hovering*/
+    width:  min-content;
+     width: 100%;
+    /* margin: auto; */
+     
+    /* color: white; */
+    border: 1px solid red;
+    
+  }
+  
+  .list-item:hover { /*operation while hovering*/
+    /* color: red;      */
+    text-decoration: line-through;  /*red coloured strikethrough*/
+  }
+  #new-item-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  h2{
+    text-align: center;
+    color: rgb(36, 35, 35);
+  }
+.btn{
+    margin-left: 2%;
+    padding: 6px 8px;
+    background: white;
+    cursor: pointer;
+    
+}
+#list{
+    /* margin-left: 40%;
+    margin-top: 2%; */
+    width: 50%;
+    margin: 0px 30% 0px 37%;
+    margin: auto;
+    /* border: 1px solid green; */
+}
+body{
+    background-color: black;
+    min-height: 100vh;
+}
+.container{
+    border: 2px solid rgb(119, 118, 118);
+    position: relative;
+    width: 50%;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+}
+</style>
+
+<body>
+    <h1 id="heading">Simple To Do list Js</h1>
+    
+    <br><br><br>
+
+    <!--form with id to be used in js-->
+    <div class="container">
+    <form id="new-item-form">   
+        <input type="text" id="item-input" placeholder="Add a work">
+        <button class = "btn"type="submit">
+            <i class="fa-sharp fa-solid fa-plus" style="color: #000000;"></i>
+        </button>
+    </form>
+
+
+    <h2> To do-</h2>
+
+    <!--A div for adding list items using js-->
+    <div id="list"> 
+        <!--item1-->
+        <!--item2-->
+        <!--item3...-->
+    </div>
+
+</div>
+</body>
